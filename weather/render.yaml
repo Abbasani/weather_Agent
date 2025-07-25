@@ -1,0 +1,13 @@
+# render.yaml
+services:
+  - type: job
+    name: weather-ai-job
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./run.sh
+    # Define environment variables here or in Render dashboard
+    envVars:
+      - key: WEATHER_API
+        value: 87d43b9ae73a1b83708dbd90e39d270b # Replace with your actual key if different
+      - key: GROQ_API_KEY
+        value: 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 # Replace with your actual key

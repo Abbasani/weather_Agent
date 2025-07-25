@@ -1,0 +1,4 @@
+langchain-community
+requests
+langchain-groq
+langchain
